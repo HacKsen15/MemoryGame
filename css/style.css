@@ -44,33 +44,53 @@ h1{
 
 }
 
-button{
-    width: 10em;
-    height: 10em;
-    background-color: rgb(76, 0, 255);
-    margin: 10px;
-    border-radius: 25px;
+.card{
     cursor: pointer;
     box-shadow: 4px 5px 5px black;
-    border: none;
-    outline: none;
 }
 
-button:hover{
+.card:hover{
     box-shadow: 8px 8px 8px black;
-    background-color: rgb(76, 8, 245);
     transition-duration: 0.2s;
 }
 
-button:active{
+.card:active{
     box-shadow: 3px 4px 4px black;
-    background-color: rgb(79, 0, 255);
     transition-duration: 0.1s;
 }
 
 main{
-    display: flex;
-    justify-content: center;
     padding: 70px;
     border-radius: 25px;
 }
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-wrapper {
+    width: 16.6666%;
+    height: 200px;
+    padding: 16px;
+}
+.card {
+    background: gray ;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bg-red {
+    background-color: red;
+}.bg-green {
+    background-color: green;
+}.bg-yellow {
+    background-color: yellow;
+}.bg-blue {
+    background-color: blue;
+}.bg-white {
+    background-color: white;
+}.bg-red {
+    background-color: orange;
+}
+
