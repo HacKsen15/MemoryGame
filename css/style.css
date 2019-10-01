@@ -1,3 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap');
+
+
+
+*{
+    margin: none;
+    box-sizing: border-box;
+}
+
+body{
+animation-name: fond;
+animation-duration: 15s;
+animation-iteration-count: infinite;
+}
+
+
+@keyframes fond{
+    0%{background-image: url("../img/pink.svg");
+        background-repeat: no-repeat;
+        background-size: cover;}
+    25%{background-image: url("../img/blue.svg");
+        background-repeat: no-repeat;
+        background-size: cover;}
+    50%{
+        background-image: url("../img/rose.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    75%{
+        background-image: url("../img/blurose.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{background-image: url("../img/pink.svg");
+        background-repeat: no-repeat;
+        background-size: cover;}
+}
+
 h1{
-    color: aqua;
+    text-align: center;
+    color: rgb(129, 24, 228);
+    font-size: 5em;
+    font-family: 'Bungee Shade', cursive;
+
+}
+
+button{
+    width: 10em;
+    height: 10em;
+    background-color: rgb(76, 0, 255);
+    margin: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 4px 5px 5px black;
+    border: none;
+    outline: none;
+}
+
+button:hover{
+    box-shadow: 8px 8px 8px black;
+    background-color: rgb(76, 8, 245);
+    transition-duration: 0.2s;
+}
+
+button:active{
+    box-shadow: 3px 4px 4px black;
+    background-color: rgb(79, 0, 255);
+    transition-duration: 0.1s;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    border-radius: 25px;
 }
